@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Tadj Eddine BOUDERBA - Étudiant en Cybersécurité à l'USTHB. Spécialisé en sécurité des systèmes, développement web et réseaux.">
+    <meta name="keywords" content="cybersécurité, portfolio, USTHB, développeur, sécurité informatique, Algérie">
+    <meta name="author" content="Tadj Eddine BOUDERBA">
+    <title>Tadj Eddine BOUDERBA | Cybersecurity Student Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="scanlines"></div>
+    <div class="bg-vignette"></div>
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">TB.</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#techstack">Tech Stack</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Disponible pour un stage</span>
+            </div>
+            <h1 class="hero-title">
+                Bonjour, je suis
+                <span class="name">BOUDERBA TADJ EDDINE</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text" id="typingText"></span>
+            </p>
+            <p class="hero-description">
+                Étudiant en <strong>3ᵉ année Génie Informatique – Cycle Ingénieur</strong>, spécialité
+                <strong>Cybersécurité</strong>,
+                à l'<strong>USTHB</strong>. Passionné par la sécurisation des systèmes et l'analyse des vulnérabilités.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>🚀</span> Voir mes projets
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>📧</span> Me contacter
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about">
+                <div class="mouse"></div>
+                <span>Scroll</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">// À propos</span>
+                <h2 class="section-title">Qui suis-je <span>?</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-image-wrapper">
+                        <img src="img/IMG_5994.jpg" alt="Tadj Eddine BOUDERBA">
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3>💫 Futur Ingénieur en Cybersécurité</h3>
+                    <p>
+                        🎓 Étudiant en <strong>3ᵉ année Génie Informatique – Cycle Ingénieur</strong>, spécialité
+                        <strong>Cybersécurité</strong>, à l'<strong>USTHB</strong> (Université des Sciences et de la
+                        Technologie Houari Boumédiène).
+                    </p>
+                    <p>
+                        🔐 Intéressé par la <strong>compréhension approfondie des systèmes informatiques</strong>,
+                        leur sécurisation et l'<strong>analyse des vulnérabilités</strong>.
+                    </p>
+                    <p>
+                        💻 Je combine des <strong>compétences théoriques solides</strong> avec des <strong>projets
+                            pratiques</strong>
+                        en cybersécurité, développement web, réseaux et data.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Année d'études</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="6">0</div>
+                            <div class="stat-label">Projets réalisés</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Clubs actifs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">// Compétences</span>
+                <h2 class="section-title">Mes <span>Compétences</span> Techniques</h2>
+                <p class="section-description">
+                    Un ensemble de compétences diversifiées acquises à travers ma formation et mes projets personnels.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <!-- Cybersecurity -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🔐</div>
+                    <h3>Cybersécurité</h3>
+                    <ul class="skill-list">
+                        <li>Fondamentaux Linux (permissions, processus)</li>
+                        <li>Privilege Escalation (Linux/Windows)</li>
+                        <li>Introduction aux CTF</li>
+                        <li>Analyse de logs SOC</li>
+                        <li>Defense in Depth, CIA Triad</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">CTF</span>
+                        <span class="tech-tag">SOC</span>
+                    </div>
+                </div>
+
+                <!-- Networking -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Réseaux</h3>
+                    <ul class="skill-list">
+                        <li>Modèle OSI & TCP/IP</li>
+                        <li>Cisco Packet Tracer</li>
+                        <li>Routage et adressage IP</li>
+                        <li>Protocoles réseau</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">TCP/IP</span>
+                        <span class="tech-tag">Cisco</span>
+                        <span class="tech-tag">Routing</span>
+                    </div>
+                </div>
+
+                <!-- Development -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">💻</div>
+                    <h3>Développement</h3>
+                    <ul class="skill-list">
+                        <li>Java (POO, Swing)</li>
+                        <li>Python (Flask)</li>
+                        <li>JavaScript</li>
+                        <li>HTML5, CSS3</li>
+                        <li>PHP</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                </div>
+
+                <!-- Data -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Données & Systèmes</h3>
+                    <ul class="skill-list">
+                        <li>SQL & Bases de données</li>
+                        <li>Structures de données</li>
+                        <li>Business Intelligence</li>
+                        <li>Qualité des données</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">BI</span>
+                        <span class="tech-tag">Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="techstack" id="techstack">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">// Tech Stack</span>
+                <h2 class="section-title"><span>Technologies</span> Maîtrisées</h2>
+            </div>
+
+            <div class="techstack-grid">
+                <!-- Core Programming -->
+                <div class="techstack-category reveal">
+                    <h3>🧠 Core Programming</h3>
+                    <div class="badge-container">
+                        <span class="tech-badge java">Java</span>
+                        <span class="tech-badge python">Python</span>
+                        <span class="tech-badge c-lang">C</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="techstack-category reveal">
+                    <h3>🌐 Web Development</h3>
+                    <div class="badge-container">
+                        <span class="tech-badge html">HTML5</span>
+                        <span class="tech-badge css">CSS3</span>
+                        <span class="tech-badge javascript">JavaScript</span>
+                        <span class="tech-badge react">React</span>
+                        <span class="tech-badge nextjs">Next.js</span>
+                        <span class="tech-badge tailwind">TailwindCSS</span>
+                    </div>
+                </div>
+
+                <!-- Backend & Servers -->
+                <div class="techstack-category reveal">
+                    <h3>⚙️ Backend & Servers</h3>
+                    <div class="badge-container">
+                        <span class="tech-badge flask">Flask</span>
+                        <span class="tech-badge php">PHP</span>
+                        <span class="tech-badge apache">Apache</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="techstack-category reveal">
+                    <h3>🛠️ Tools & Platforms</h3>
+                    <div class="badge-container">
+                        <span class="tech-badge git">Git</span>
+                        <span class="tech-badge github">GitHub</span>
+                        <span class="tech-badge linux">Linux</span>
+                        <span class="tech-badge cisco">Cisco</span>
+                        <span class="tech-badge packet-tracer">Packet Tracer</span>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="techstack-category reveal">
+                    <h3>🎨 Design</h3>
+                    <div class="badge-container">
+                        <span class="tech-badge figma">Figma</span>
+                        <span class="tech-badge canva">Canva</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">// Portfolio</span>
+                <h2 class="section-title">Mes <span>Projets</span></h2>
+                <p class="section-description">
+                    Une sélection de projets académiques et personnels démontrant mes compétences techniques.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <!-- NeoMarket -->
+                <div class="project-card reveal">
+                    <div class="project-image">🛒</div>
+                    <div class="project-content">
+                        <span class="project-category">E-Commerce</span>
+                        <h3>NeoMarket</h3>
+                        <p>
+                            Plateforme e-commerce complète dédiée à la vente de matériel gaming.
+                            Catalogue dynamique, interactions AJAX et gestion serveur.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Team Project</span>
+                        </div>
+                        <br>
+                        <div class="project-links">
+                            <a href="https://github.com/tedjeddine22" class="project-link" target="_blank"
+                                rel="noopener">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diacar -->
+                <div class="project-card reveal">
+                    <div class="project-image">🩺</div>
+                    <div class="project-content">
+                        <span class="project-category">Healthcare</span>
+                        <h3>Diacar</h3>
+                        <p>
+                            Application web pour le suivi intelligent du diabète.
+                            Suivi glycémie, rappels, forum communautaire et carte interactive.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Team Project</span>
+                        </div>
+                        <br>
+                        <div class="project-links">
+                            <a href="https://github.com/tedjeddine22" class="project-link" target="_blank"
+                                rel="noopener">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Talka Nova -->
+                <div class="project-card reveal">
+                    <div class="project-image">🗣️</div>
+                    <div class="project-content">
+                        <span class="project-category">Messaging App</span>
+                        <h3>TalkaNova</h3>
+                        <p>
+                            Application de messagerie temps réel moderne.
+                            Channels privés, chat général et authentification.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Team Project</span>
+                        </div>
+                        <br>
+                        <div class="project-links">
+                            <a href="https://github.com/Imadzakxy/TalkaNova" class="project-link" target="_blank"
+                                rel="noopener">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clinic Management -->
+                <div class="project-card reveal">
+                    <div class="project-image">🏥</div>
+                    <div class="project-content">
+                        <span class="project-category">Desktop App</span>
+                        <h3>Gestion Clinique</h3>
+                        <p>
+                            Application desktop Java Swing pour la gestion d'une clinique médicale.
+                            Authentification, patients, consultations et rendez-vous.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Swing</span>
+                            <span class="tech-tag">POO</span>
+                            <span class="tech-tag">Team Project</span>
+                        </div>
+                        <br>
+                        <div class="project-links">
+                            <a href="https://github.com/tedjeddine22" class="project-link" target="_blank"
+                                rel="noopener">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BI Project -->
+                <div class="project-card reveal">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <span class="project-category">Data</span>
+                        <h3>Business Intelligence</h3>
+                        <p>
+                            Projet d'analyse et visualisation de données pour l'aide à la décision.
+                            ETL, transformation et exploitation.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">BI</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <br>
+                        <div class="project-links">
+                            <a href="https://github.com/tedjeddine22" class="project-link" target="_blank"
+                                rel="noopener">
+                                <span>📂</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">// Parcours</span>
+                <h2 class="section-title">Expérience & <span>Formation</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- USTHB -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - Présent</span>
+                        <h3>Cycle Ingénieur - Génie Informatique</h3>
+                        <h4>USTHB, Alger</h4>
+                        <p>
+                            Spécialité Cybersécurité. Formation approfondie en systèmes,
+                            réseaux, programmation et sécurité informatique.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sonatrach -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>Stage de Découverte IT</h3>
+                        <h4>Sonatrach - Division Laboratoire, Boumerdès</h4>
+                        <p>
+                            Immersion dans l'infrastructure IT industrielle.
+                            Découverte des systèmes, bonnes pratiques de sécurité
+                            et procédures professionnelles.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Clubs -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Présent</span>
+                        <h3>Engagement Associatif</h3>
+                        <h4>Clubs Universitaires</h4>
+                        <p>
+                            Membre actif de plusieurs clubs : Open Minds Club,
+                            Shellmates Club, Dev Up, Mecro Club.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubs Section -->
+    <section class="clubs" id="clubs">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">// Communauté</span>
+                <h2 class="section-title">Clubs <span>& Associations</span></h2>
+            </div>
+            <div class="clubs-grid">
+                <div class="club-card reveal">
+                    <div class="club-icon">🧠</div>
+                    <h3>Open Minds Club</h3>
+                </div>
+                <div class="club-card reveal">
+                    <div class="club-icon">⚔️</div>
+                    <h3>Shellmates Club</h3>
+                </div>
+                <div class="club-card reveal">
+                    <div class="club-icon">💻</div>
+                    <h3>Dev Up</h3>
+                </div>
+                <div class="club-card reveal">
+                    <div class="club-icon">🤖</div>
+                    <h3>Mecro Club</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages" id="languages">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">// Langues</span>
+                <h2 class="section-title">Compétences <span>Linguistiques</span></h2>
+            </div>
+            <div class="languages-grid">
+                <div class="language-card reveal">
+                    <div class="language-flag">🇫🇷</div>
+                    <h4>Français</h4>
+                    <span>Courant</span>
+                </div>
+                <div class="language-card reveal">
+                    <div class="language-flag">🇬🇧</div>
+                    <h4>Anglais</h4>
+                    <span>Technique / Professionnel</span>
+                </div>
+                <div class="language-card reveal">
+                    <div class="language-flag">🇩🇿</div>
+                    <h4>Arabe</h4>
+                    <span>Langue maternelle</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">// Contact</span>
+                <h2 class="section-title">Travaillons <span>Ensemble</span></h2>
+                <p class="section-description">
+                    N'hésitez pas à me contacter pour discuter d'opportunités de stage ou de collaboration.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3>Restons connectés</h3>
+                    <p>
+                        Je suis actuellement à la recherche d'opportunités de stage en cybersécurité.
+                        Que ce soit pour une collaboration ou simplement pour échanger, je serai ravi de vous lire.
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://github.com/tedjeddine22" class="contact-link" target="_blank" rel="noopener">
+                            <div class="contact-link-icon">📂</div>
+                            <div class="contact-link-text">
+                                <h4>GitHub</h4>
+                                <span>github.com/tedjeddine22</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tadj-eddine-bouderba-533504255/" class="contact-link"
+                            target="_blank" rel="noopener">
+                            <div class="contact-link-icon">💼</div>
+                            <div class="contact-link-text">
+                                <h4>LinkedIn</h4>
+                                <span>Tadj Eddine BOUDERBA</span>
+                            </div>
+                        </a>
+                        <a href="mailto:tadjotadji76@gmail.com" class="contact-link">
+                            <div class="contact-link-icon">📧</div>
+                            <div class="contact-link-text">
+                                <h4>Email</h4>
+                                <span>tadjotadji76@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://discord.gg/tadjo.bd" class="contact-link" target="_blank" rel="noopener">
+                            <div class="contact-link-icon">🎮</div>
+                            <div class="contact-link-text">
+                                <h4>Discord</h4>
+                                <span>tadjo.bd</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal-right" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>🚀</span> Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-quote">
+                "Build systems. Break them. Understand them. Secure them."
+            </p>
+            <div class="footer-links">
+                <a href="https://github.com/tedjeddine22" target="_blank" rel="noopener" title="GitHub">📂</a>
+                <a href="https://www.linkedin.com/in/tadj-eddine-bouderba-533504255/" target="_blank" rel="noopener"
+                    title="LinkedIn">💼</a>
+                <a href="https://discord.gg/tadjo.bd" target="_blank" rel="noopener" title="Discord">🎮</a>
+                <a href="mailto:tadjotadji76@gmail.com" title="Email">📧</a>
+            </div>
+            <p class="footer-copyright">
+                © 2026 Tadj Eddine BOUDERBA. Fait avec <span>❤️</span> à Alger.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
